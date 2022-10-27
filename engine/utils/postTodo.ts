@@ -1,5 +1,5 @@
-import { routers, baseUrl } from '../routes/routes';
-import { TodoItem } from '../types/todo';
+import { routers, baseUrl } from 'engine/routes/routes';
+import { TodoItem } from 'engine/types/todo';
 
 export const postTodo = async (todo: TodoItem) => {
   const response = await fetch(`${baseUrl}${routers.apiTodos}/${todo.id}`, {

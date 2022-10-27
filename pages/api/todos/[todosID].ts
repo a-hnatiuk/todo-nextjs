@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { TodoItem } from '../../todos';
+import { TodoItem } from 'engine/types/todo';
 
 export default function handler(
   req: NextApiRequest,

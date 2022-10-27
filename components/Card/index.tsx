@@ -1,7 +1,7 @@
 import React, { FC, ReactNode } from 'react';
 import { Card as CardUI, CardActions, CardContent, Box } from '@mui/material';
 import clsx from 'clsx';
-import styles from './card.module.scss';
+import styles from 'components/Card/card.module.scss';
 
 interface CardProps {
   children: ReactNode;

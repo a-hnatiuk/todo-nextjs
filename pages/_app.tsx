@@ -1,7 +1,7 @@
-import 'styles/globals.scss';
+import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import styles from 'styles/app.module.scss';
-import Head from 'next/head';
+import 'styles/global/globals.scss';
 
 const App = ({ Component, pageProps }: AppProps) => (
   <div className={styles.container}>

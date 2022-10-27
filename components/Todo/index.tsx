@@ -1,9 +1,9 @@
-import React, { FC, useState } from 'react';
+import React, { ChangeEvent, FC, useState } from 'react';
 import { Typography, InputBase, Paper, Stack } from '@mui/material';
-import { Card } from '../Card';
-import { Button } from '../Button';
-import styles from './todo.module.scss';
-import { postTodo } from '../../engine/utils/postTodo';
+import { postTodo } from 'engine/utils/postTodo';
+import { Card } from 'components/Card';
+import { Button } from 'components/Button';
+import styles from 'components/Todo/todo.module.scss';
 
 interface TodoProps {
   text: string;
@@ -11,14 +11,16 @@ interface TodoProps {
 }
 
 export const Todo: FC<TodoProps> = ({ text, id }) => {
-  const [editMode, setEditMode] = useState(false);
-  const [todoValue, setTodoValue] = useState(text);
+  const [editMode, setEditMode] = useState<boolean>(false);
+  const [todoValue, setTodoValue] = useState<string>(text);
 
   const editHandler = () => {
     setEditMode(true);
   };
 
-  const inputChangeHandler = (e) => {
+  const inputChangeHandler = (
+    e: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
+  ) => {
     setTodoValue(e.target.value);
   };
 

@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { TodoItem } from '../../todos';
-import { todosMockList } from '../mock/todosMockList';
+import { TodoItem } from 'engine/types/todo';
+import { todosMockList } from 'pages/api/mock/todosMockList';
 
 type TodosList = Array<TodoItem>;
 

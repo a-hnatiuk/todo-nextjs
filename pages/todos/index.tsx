@@ -1,12 +1,12 @@
 import React from 'react';
 import { Typography } from '@mui/material';
 import { NextPage, GetStaticProps } from 'next';
-import styles from './todos.module.scss';
-import { Button } from '../../components/Button';
-import { routers } from '../../engine/routes/routes';
-import { Todo } from '../../components/Todo';
-import { getTodoList } from '../../engine/utils/getTodoList';
-import { TodoItem } from '../../engine/types/todo';
+import { getTodoList } from 'engine/utils/getTodoList';
+import { TodoItem } from 'engine/types/todo';
+import { routers } from 'engine/routes/routes';
+import { Button } from 'components/Button';
+import { Todo } from 'components/Todo';
+import styles from 'styles/todos.module.scss';
 
 interface TodosProps {
   todos: Array<TodoItem>;
@@ -14,10 +14,10 @@ interface TodosProps {
 
 const Todos: NextPage<TodosProps> = ({ todos }) => (
   <>
-    <Button href={routers.home} variant="outlined">
+    <Button href={routers.home} variant="outlined" className={styles.btnBack}>
       Back
     </Button>
-    <Typography variant="h1">Todo list</Typography>
+    <Typography variant="h2">Todo list</Typography>
     <div className={styles.todosWrapper}>
       {todos &&
         todos.map((todo) => (

@@ -1,14 +1,14 @@
-import React, { FC, MouseEventHandler, ReactNode } from 'react';
+import React, { FC, SyntheticEvent, ReactNode } from 'react';
 import { Button as ButtonUI } from '@mui/material';
 import LinkNext from 'next/link';
 import clsx from 'clsx';
-import styles from './button.module.scss';
+import styles from 'components/Button/button.module.scss';
 
 interface ButtonProps {
   children: ReactNode;
   href?: string;
   variant?: 'text' | 'outlined' | 'contained';
-  onClick?: (e: MouseEventHandler<HTMLAnchorElement>) => void;
+  onClick?: (e: SyntheticEvent) => void;
   className?: string;
 }
 

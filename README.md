@@ -1,5 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Task:
 
+Create a simple NextJS project that supports MUI and Typescript.
+
+## Requirements:
+
+- The app should contain three pages at routes `/`, `/todos`, and `/api/todos`
+- The `api/todos` page should contain a GET handler that returns an object with a mock list of todos. Each todo should have an `_id` and `text` property.
+- The home page (at route `/`) should contain a welcome message and a button to navigate to the todos page.
+- The `/todos` page should GET data from the api at `api/todos` and display a list of Cards (https://mui.com/material-ui/react-card/) with the todo title visible.
+- Clicking the Edit button on a card will display a textfield inside the card populated with the current todo text.
+- Clicking a Save button will send a POST request to `api/todos/{todoID}` with the updated todo data.
+- Do not worry about updating the todos in memory.
+
+You can use this for inspiration:
+https://mui.com/material-ui/getting-started/templates/Example todo object: {   _id: "testid1",   text: "Example Todo 1" }
 ## Getting Started
 
 First, run the development server:

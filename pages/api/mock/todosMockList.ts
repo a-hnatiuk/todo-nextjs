@@ -2,38 +2,26 @@
 export const todosMockList = [
   {
     id: '1',
-    text: 'item 1',
+    text: 'feed a cat',
   },
   {
     id: '2',
-    text: 'item 2 item 2 item 2 item 2 item 2 item 2 item 2 item 2 item 2 item 2 item 2 item 2 item 2item 2 item 2 item 2 item 2 item 2 item 2 item 2 item 2 ',
+    text: 'to google how to create a crossbow',
   },
   {
     id: '3',
-    text: 'item 3 item 3 item 3 item 3 item 3 3 item 3 item 3 ',
+    text: 'do not get lost in life',
   },
   {
     id: '4',
-    text: 'item 1',
+    text: 'hug my neighbor',
   },
   {
     id: '5',
-    text: 'item 2 item 2 item 2 item 2 item 2 item 2 item 2 item 2 item 2 item 2 item 2 item 2 item 2item 2 item 2 item 2 item 2 item 2 item 2 item 2 item 2 ',
+    text: 'check if a strange man is watching me',
   },
   {
     id: '6',
-    text: 'item 3 item 3 item 3 item 3 item 3 3 item 3 item 3 ',
-  },
-  {
-    id: '7',
-    text: 'item 1',
-  },
-  {
-    id: '8',
-    text: 'item 2 item 2 item 2 item 2 item 2 item 2 item 2 item 2 item 2 item 2 item 2 item 2 item 2item 2 item 2 item 2 item 2 item 2 item 2 item 2 item 2 ',
-  },
-  {
-    id: '9',
-    text: 'item 3 item 3 item 3 item 3 item 3 3 item 3 item 3 ',
+    text: 'find the socks',
   },
 ];

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import type { AppProps } from 'next/app';
+
 import styles from 'styles/app.module.scss';
 import 'styles/global/globals.scss';
 

@@ -1,9 +1,11 @@
 import React, { ChangeEvent, FC, useState } from 'react';
 import { Typography, InputBase, Paper, Stack } from '@mui/material';
+
 import { postTodo } from 'engine/utils/postTodo';
 import { Card } from 'components/Card';
 import { Button } from 'components/Button';
-import styles from 'components/Todo/todo.module.scss';
+
+import styles from './index.module.scss';
 
 interface TodoProps {
   text: string;
@@ -34,7 +36,7 @@ export const Todo: FC<TodoProps> = ({ text, id }) => {
   };
 
   return (
-    <Card className={styles.todoItem}>
+    <Card>
       {editMode ? (
         <Paper component="form" className={styles.editForm}>
           <InputBase

@@ -2,7 +2,8 @@ import React, { FC, SyntheticEvent, ReactNode } from 'react';
 import { Button as ButtonUI } from '@mui/material';
 import LinkNext from 'next/link';
 import clsx from 'clsx';
-import styles from 'components/Button/button.module.scss';
+
+import styles from './index.module.scss';
 
 interface ButtonProps {
   children: ReactNode;

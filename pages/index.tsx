@@ -1,6 +1,8 @@
 import { Typography } from '@mui/material';
+
 import { Button } from 'components/Button';
 import { routers } from 'engine/routes/routes';
+
 import styles from 'styles/home.module.scss';
 
 const Home = () => (
